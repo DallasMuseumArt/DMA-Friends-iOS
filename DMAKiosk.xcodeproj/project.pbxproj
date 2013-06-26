@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		305FF5DC1694D591003F14BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FF5DB1694D591003F14BC /* UIKit.framework */; };
+		305FF5DE1694D591003F14BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FF5DD1694D591003F14BC /* Foundation.framework */; };
+		305FF5E01694D591003F14BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FF5DF1694D591003F14BC /* CoreGraphics.framework */; };
+		305FF5E61694D591003F14BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 305FF5E41694D591003F14BC /* InfoPlist.strings */; };
+		305FF5E81694D591003F14BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 305FF5E71694D591003F14BC /* main.m */; };
+		305FF5EC1694D591003F14BC /* DMAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 305FF5EB1694D591003F14BC /* DMAAppDelegate.m */; };
+		305FF5EE1694D591003F14BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 305FF5ED1694D591003F14BC /* Default.png */; };
+		305FF5F01694D591003F14BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 305FF5EF1694D591003F14BC /* Default@2x.png */; };
+		305FF5F21694D591003F14BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 305FF5F11694D591003F14BC /* Default-568h@2x.png */; };
+		305FF5FA1694D591003F14BC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FF5F91694D591003F14BC /* SenTestingKit.framework */; };
+		305FF5FB1694D591003F14BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FF5DB1694D591003F14BC /* UIKit.framework */; };
+		305FF5FC1694D591003F14BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FF5DD1694D591003F14BC /* Foundation.framework */; };
+		305FF6041694D591003F14BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 305FF6021694D591003F14BC /* InfoPlist.strings */; };
+		305FF6071694D591003F14BC /* DMAKioskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 305FF6061694D591003F14BC /* DMAKioskTests.m */; };
+		305FF6131694D993003F14BC /* images in Resources */ = {isa = PBXBuildFile; fileRef = 305FF6121694D993003F14BC /* images */; };
+		305FF6171694DA5D003F14BC /* DMAAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 305FF6161694DA5D003F14BC /* DMAAppDelegate_iPad.m */; };
+		30C6F90A1694DF28004CEFC6 /* DMAMainViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C6F9091694DF28004CEFC6 /* DMAMainViewController_iPad.m */; };
+		30C6F92E1694E674004CEFC6 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C6F9281694E674004CEFC6 /* libzbar.a */; };
+		30C6F92F1694E674004CEFC6 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C6F92A1694E674004CEFC6 /* zbar-back.png */; };
+		30C6F9301694E674004CEFC6 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 30C6F92B1694E674004CEFC6 /* zbar-help.html */; };
+		30C6F9311694E674004CEFC6 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C6F92C1694E674004CEFC6 /* zbar-helpicons.png */; };
+		30C6F9321694E674004CEFC6 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C6F92D1694E674004CEFC6 /* zbar-samples.png */; };
+		30C6F9341694E873004CEFC6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C6F9331694E873004CEFC6 /* QuartzCore.framework */; };
+		30C6F9361694E884004CEFC6 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C6F9351694E884004CEFC6 /* libiconv.2.dylib */; };
+		30C6F9381694E891004CEFC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C6F9371694E891004CEFC6 /* AVFoundation.framework */; };
+		30C6F9401694F03B004CEFC6 /* icon-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C6F93C1694F03B004CEFC6 /* icon-ipad.png */; };
+		30C6F9411694F03B004CEFC6 /* icon-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C6F93D1694F03B004CEFC6 /* icon-ipad@2x.png */; };
+		30F3BB4B1695D45500DAEAAD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F3BB4A1695D45500DAEAAD /* CoreVideo.framework */; };
+		30F3BB4D1695D46200DAEAAD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F3BB4C1695D46200DAEAAD /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		305FF5FD1694D591003F14BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305FF5CE1694D591003F14BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 305FF5D61694D591003F14BC;
+			remoteInfo = DMAKiosk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		305FF5D71694D591003F14BC /* DMAKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMAKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		305FF5DB1694D591003F14BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		305FF5DD1694D591003F14BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		305FF5DF1694D591003F14BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		305FF5E31694D591003F14BC /* DMAKiosk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMAKiosk-Info.plist"; sourceTree = "<group>"; };
+		305FF5E51694D591003F14BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		305FF5E71694D591003F14BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		305FF5E91694D591003F14BC /* DMAKiosk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMAKiosk-Prefix.pch"; sourceTree = "<group>"; };
+		305FF5EA1694D591003F14BC /* DMAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAAppDelegate.h; sourceTree = "<group>"; };
+		305FF5EB1694D591003F14BC /* DMAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAAppDelegate.m; sourceTree = "<group>"; };
+		305FF5ED1694D591003F14BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		305FF5EF1694D591003F14BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		305FF5F11694D591003F14BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		305FF5F81694D591003F14BC /* DMAKioskTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMAKioskTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		305FF5F91694D591003F14BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		305FF6011694D591003F14BC /* DMAKioskTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMAKioskTests-Info.plist"; sourceTree = "<group>"; };
+		305FF6031694D591003F14BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		305FF6051694D591003F14BC /* DMAKioskTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAKioskTests.h; sourceTree = "<group>"; };
+		305FF6061694D591003F14BC /* DMAKioskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAKioskTests.m; sourceTree = "<group>"; };
+		305FF6121694D993003F14BC /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		305FF6151694DA5D003F14BC /* DMAAppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAAppDelegate_iPad.h; sourceTree = "<group>"; };
+		305FF6161694DA5D003F14BC /* DMAAppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAAppDelegate_iPad.m; sourceTree = "<group>"; };
+		30C6F9081694DF28004CEFC6 /* DMAMainViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAMainViewController_iPad.h; sourceTree = "<group>"; };
+		30C6F9091694DF28004CEFC6 /* DMAMainViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAMainViewController_iPad.m; sourceTree = "<group>"; };
+		30C6F9141694E674004CEFC6 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		30C6F9151694E674004CEFC6 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		30C6F9161694E674004CEFC6 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		30C6F9171694E674004CEFC6 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		30C6F9181694E674004CEFC6 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		30C6F9191694E674004CEFC6 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		30C6F91A1694E674004CEFC6 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		30C6F91B1694E674004CEFC6 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		30C6F91C1694E674004CEFC6 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		30C6F91D1694E674004CEFC6 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		30C6F91E1694E674004CEFC6 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		30C6F91F1694E674004CEFC6 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		30C6F9201694E674004CEFC6 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		30C6F9211694E674004CEFC6 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		30C6F9221694E674004CEFC6 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		30C6F9231694E674004CEFC6 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		30C6F9241694E674004CEFC6 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		30C6F9251694E674004CEFC6 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		30C6F9261694E674004CEFC6 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		30C6F9271694E674004CEFC6 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		30C6F9281694E674004CEFC6 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		30C6F92A1694E674004CEFC6 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		30C6F92B1694E674004CEFC6 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		30C6F92C1694E674004CEFC6 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		30C6F92D1694E674004CEFC6 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		30C6F9331694E873004CEFC6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		30C6F9351694E884004CEFC6 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = usr/lib/libiconv.2.dylib; sourceTree = SDKROOT; };
+		30C6F9371694E891004CEFC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		30C6F93C1694F03B004CEFC6 /* icon-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ipad.png"; sourceTree = "<group>"; };
+		30C6F93D1694F03B004CEFC6 /* icon-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ipad@2x.png"; sourceTree = "<group>"; };
+		30F3BB4A1695D45500DAEAAD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		30F3BB4C1695D46200DAEAAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305FF5D41694D591003F14BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F3BB4D1695D46200DAEAAD /* CoreMedia.framework in Frameworks */,
+				30F3BB4B1695D45500DAEAAD /* CoreVideo.framework in Frameworks */,
+				30C6F9381694E891004CEFC6 /* AVFoundation.framework in Frameworks */,
+				30C6F9361694E884004CEFC6 /* libiconv.2.dylib in Frameworks */,
+				30C6F9341694E873004CEFC6 /* QuartzCore.framework in Frameworks */,
+				305FF5DC1694D591003F14BC /* UIKit.framework in Frameworks */,
+				305FF5DE1694D591003F14BC /* Foundation.framework in Frameworks */,
+				305FF5E01694D591003F14BC /* CoreGraphics.framework in Frameworks */,
+				30C6F92E1694E674004CEFC6 /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305FF5F41694D591003F14BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305FF5FA1694D591003F14BC /* SenTestingKit.framework in Frameworks */,
+				305FF5FB1694D591003F14BC /* UIKit.framework in Frameworks */,
+				305FF5FC1694D591003F14BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305FF5CC1694D591003F14BC = {
+			isa = PBXGroup;
+			children = (
+				305FF5E11694D591003F14BC /* DMAKiosk */,
+				305FF5FF1694D591003F14BC /* DMAKioskTests */,
+				305FF5DA1694D591003F14BC /* Frameworks */,
+				305FF5D81694D591003F14BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		305FF5D81694D591003F14BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305FF5D71694D591003F14BC /* DMAKiosk.app */,
+				305FF5F81694D591003F14BC /* DMAKioskTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305FF5DA1694D591003F14BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				305FF5DB1694D591003F14BC /* UIKit.framework */,
+				305FF5DD1694D591003F14BC /* Foundation.framework */,
+				305FF5DF1694D591003F14BC /* CoreGraphics.framework */,
+				30C6F9331694E873004CEFC6 /* QuartzCore.framework */,
+				30C6F9371694E891004CEFC6 /* AVFoundation.framework */,
+				30F3BB4A1695D45500DAEAAD /* CoreVideo.framework */,
+				30F3BB4C1695D46200DAEAAD /* CoreMedia.framework */,
+				30C6F9351694E884004CEFC6 /* libiconv.2.dylib */,
+				305FF5F91694D591003F14BC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		305FF5E11694D591003F14BC /* DMAKiosk */ = {
+			isa = PBXGroup;
+			children = (
+				305FF5EA1694D591003F14BC /* DMAAppDelegate.h */,
+				305FF5EB1694D591003F14BC /* DMAAppDelegate.m */,
+				305FF6101694D986003F14BC /* iPad */,
+				305FF6141694D9A0003F14BC /* Libraries */,
+				305FF5E21694D591003F14BC /* Supporting Files */,
+			);
+			path = DMAKiosk;
+			sourceTree = "<group>";
+		};
+		305FF5E21694D591003F14BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				305FF6121694D993003F14BC /* images */,
+				30C6F9391694F03B004CEFC6 /* icons */,
+				305FF5E31694D591003F14BC /* DMAKiosk-Info.plist */,
+				305FF5E41694D591003F14BC /* InfoPlist.strings */,
+				305FF5E71694D591003F14BC /* main.m */,
+				305FF5E91694D591003F14BC /* DMAKiosk-Prefix.pch */,
+				305FF5ED1694D591003F14BC /* Default.png */,
+				305FF5EF1694D591003F14BC /* Default@2x.png */,
+				305FF5F11694D591003F14BC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		305FF5FF1694D591003F14BC /* DMAKioskTests */ = {
+			isa = PBXGroup;
+			children = (
+				305FF6051694D591003F14BC /* DMAKioskTests.h */,
+				305FF6061694D591003F14BC /* DMAKioskTests.m */,
+				305FF6001694D591003F14BC /* Supporting Files */,
+			);
+			path = DMAKioskTests;
+			sourceTree = "<group>";
+		};
+		305FF6001694D591003F14BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				305FF6011694D591003F14BC /* DMAKioskTests-Info.plist */,
+				305FF6021694D591003F14BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		305FF6101694D986003F14BC /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				305FF6151694DA5D003F14BC /* DMAAppDelegate_iPad.h */,
+				305FF6161694DA5D003F14BC /* DMAAppDelegate_iPad.m */,
+				305FF6111694D986003F14BC /* ViewControllers */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		305FF6111694D986003F14BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F9081694DF28004CEFC6 /* DMAMainViewController_iPad.h */,
+				30C6F9091694DF28004CEFC6 /* DMAMainViewController_iPad.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		305FF6141694D9A0003F14BC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F9101694E674004CEFC6 /* ZBarSDK */,
+			);
+			path = Libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		30C6F9101694E674004CEFC6 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F9111694E674004CEFC6 /* Headers */,
+				30C6F9281694E674004CEFC6 /* libzbar.a */,
+				30C6F9291694E674004CEFC6 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		30C6F9111694E674004CEFC6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F9121694E674004CEFC6 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		30C6F9121694E674004CEFC6 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F9131694E674004CEFC6 /* zbar */,
+				30C6F91D1694E674004CEFC6 /* zbar.h */,
+				30C6F91E1694E674004CEFC6 /* ZBarCameraSimulator.h */,
+				30C6F91F1694E674004CEFC6 /* ZBarCaptureReader.h */,
+				30C6F9201694E674004CEFC6 /* ZBarHelpController.h */,
+				30C6F9211694E674004CEFC6 /* ZBarImage.h */,
+				30C6F9221694E674004CEFC6 /* ZBarImageScanner.h */,
+				30C6F9231694E674004CEFC6 /* ZBarReaderController.h */,
+				30C6F9241694E674004CEFC6 /* ZBarReaderView.h */,
+				30C6F9251694E674004CEFC6 /* ZBarReaderViewController.h */,
+				30C6F9261694E674004CEFC6 /* ZBarSDK.h */,
+				30C6F9271694E674004CEFC6 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		30C6F9131694E674004CEFC6 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F9141694E674004CEFC6 /* Decoder.h */,
+				30C6F9151694E674004CEFC6 /* Exception.h */,
+				30C6F9161694E674004CEFC6 /* Image.h */,
+				30C6F9171694E674004CEFC6 /* ImageScanner.h */,
+				30C6F9181694E674004CEFC6 /* Processor.h */,
+				30C6F9191694E674004CEFC6 /* Scanner.h */,
+				30C6F91A1694E674004CEFC6 /* Symbol.h */,
+				30C6F91B1694E674004CEFC6 /* Video.h */,
+				30C6F91C1694E674004CEFC6 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		30C6F9291694E674004CEFC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F92A1694E674004CEFC6 /* zbar-back.png */,
+				30C6F92B1694E674004CEFC6 /* zbar-help.html */,
+				30C6F92C1694E674004CEFC6 /* zbar-helpicons.png */,
+				30C6F92D1694E674004CEFC6 /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30C6F9391694F03B004CEFC6 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				30C6F93C1694F03B004CEFC6 /* icon-ipad.png */,
+				30C6F93D1694F03B004CEFC6 /* icon-ipad@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		305FF5D61694D591003F14BC /* DMAKiosk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305FF60A1694D591003F14BC /* Build configuration list for PBXNativeTarget "DMAKiosk" */;
+			buildPhases = (
+				305FF5D31694D591003F14BC /* Sources */,
+				305FF5D41694D591003F14BC /* Frameworks */,
+				305FF5D51694D591003F14BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMAKiosk;
+			productName = DMAKiosk;
+			productReference = 305FF5D71694D591003F14BC /* DMAKiosk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		305FF5F71694D591003F14BC /* DMAKioskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305FF60D1694D591003F14BC /* Build configuration list for PBXNativeTarget "DMAKioskTests" */;
+			buildPhases = (
+				305FF5F31694D591003F14BC /* Sources */,
+				305FF5F41694D591003F14BC /* Frameworks */,
+				305FF5F51694D591003F14BC /* Resources */,
+				305FF5F61694D591003F14BC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				305FF5FE1694D591003F14BC /* PBXTargetDependency */,
+			);
+			name = DMAKioskTests;
+			productName = DMAKioskTests;
+			productReference = 305FF5F81694D591003F14BC /* DMAKioskTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		305FF5CE1694D591003F14BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DMA;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = LearningTimes;
+			};
+			buildConfigurationList = 305FF5D11694D591003F14BC /* Build configuration list for PBXProject "DMAKiosk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 305FF5CC1694D591003F14BC;
+			productRefGroup = 305FF5D81694D591003F14BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				305FF5D61694D591003F14BC /* DMAKiosk */,
+				305FF5F71694D591003F14BC /* DMAKioskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305FF5D51694D591003F14BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305FF5E61694D591003F14BC /* InfoPlist.strings in Resources */,
+				305FF5EE1694D591003F14BC /* Default.png in Resources */,
+				305FF5F01694D591003F14BC /* Default@2x.png in Resources */,
+				305FF5F21694D591003F14BC /* Default-568h@2x.png in Resources */,
+				305FF6131694D993003F14BC /* images in Resources */,
+				30C6F92F1694E674004CEFC6 /* zbar-back.png in Resources */,
+				30C6F9301694E674004CEFC6 /* zbar-help.html in Resources */,
+				30C6F9311694E674004CEFC6 /* zbar-helpicons.png in Resources */,
+				30C6F9321694E674004CEFC6 /* zbar-samples.png in Resources */,
+				30C6F9401694F03B004CEFC6 /* icon-ipad.png in Resources */,
+				30C6F9411694F03B004CEFC6 /* icon-ipad@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305FF5F51694D591003F14BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305FF6041694D591003F14BC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		305FF5F61694D591003F14BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305FF5D31694D591003F14BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305FF5E81694D591003F14BC /* main.m in Sources */,
+				305FF5EC1694D591003F14BC /* DMAAppDelegate.m in Sources */,
+				305FF6171694DA5D003F14BC /* DMAAppDelegate_iPad.m in Sources */,
+				30C6F90A1694DF28004CEFC6 /* DMAMainViewController_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305FF5F31694D591003F14BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305FF6071694D591003F14BC /* DMAKioskTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		305FF5FE1694D591003F14BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 305FF5D61694D591003F14BC /* DMAKiosk */;
+			targetProxy = 305FF5FD1694D591003F14BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		305FF5E41694D591003F14BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305FF5E51694D591003F14BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		305FF6021694D591003F14BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305FF6031694D591003F14BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		305FF6081694D591003F14BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		305FF6091694D591003F14BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		305FF60B1694D591003F14BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dallas Museum of Art";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMAKiosk/DMAKiosk-Prefix.pch";
+				INFOPLIST_FILE = "DMAKiosk/DMAKiosk-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/ZBarSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "596F9F9C-5DBA-4693-B7BB-15FC621B6FC5";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		305FF60C1694D591003F14BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMAKiosk/DMAKiosk-Prefix.pch";
+				INFOPLIST_FILE = "DMAKiosk/DMAKiosk-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/ZBarSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		305FF60E1694D591003F14BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DMAKiosk.app/DMAKiosk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMAKiosk/DMAKiosk-Prefix.pch";
+				INFOPLIST_FILE = "DMAKioskTests/DMAKioskTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		305FF60F1694D591003F14BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DMAKiosk.app/DMAKiosk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMAKiosk/DMAKiosk-Prefix.pch";
+				INFOPLIST_FILE = "DMAKioskTests/DMAKioskTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305FF5D11694D591003F14BC /* Build configuration list for PBXProject "DMAKiosk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305FF6081694D591003F14BC /* Debug */,
+				305FF6091694D591003F14BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305FF60A1694D591003F14BC /* Build configuration list for PBXNativeTarget "DMAKiosk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305FF60B1694D591003F14BC /* Debug */,
+				305FF60C1694D591003F14BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305FF60D1694D591003F14BC /* Build configuration list for PBXNativeTarget "DMAKioskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305FF60E1694D591003F14BC /* Debug */,
+				305FF60F1694D591003F14BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 305FF5CE1694D591003F14BC /* Project object */;
+}
