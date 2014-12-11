@@ -66,7 +66,11 @@ static NSString *const DMAMainViewControlleriPadBaseURL = @"http://friends.dma.o
 
 - (void)viewWillAppear:(BOOL)animated
 {
-	[_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:DMAMainViewControlleriPadBaseURL]]];
+    NSString *uuid = [UIDevice currentDevice].identifierForVendor.UUIDString;
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:DMAMainViewControlleriPadBaseURL]];
+    [request addValue:uuid forHTTPHeaderField:@"x-device-uuid"];
+    
+	[_webView loadRequest:request];
 }
 
 #pragma mark -
