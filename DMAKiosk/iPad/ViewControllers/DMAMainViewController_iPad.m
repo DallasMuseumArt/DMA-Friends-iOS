@@ -14,7 +14,7 @@
 #warning Staging server
 static NSString *const DMAMainViewControlleriPadBaseURL = @"http://dma:devsonly@dma.wdslab.com/";
 #else
-static NSString *const DMAMainViewControlleriPadBaseURL = @"http://friends.dma.org/";
+static NSString *const DMAMainViewControlleriPadBaseURL = @"http://octoberfriends.dma.org/";
 #endif
 
 @implementation DMAMainViewController_iPad
@@ -90,7 +90,7 @@ static NSString *const DMAMainViewControlleriPadBaseURL = @"http://friends.dma.o
 {
 	for (ZBarSymbol *tmpSymbol in symbols)
 	{
-		[_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[DMAMainViewControlleriPadBaseURL stringByAppendingFormat:@"?authenticate=true&username=%@", [tmpSymbol data]]]]];
+		[_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[DMAMainViewControlleriPadBaseURL stringByAppendingFormat:@"/location/barcode-login?barcodeId=%@", [tmpSymbol data]]]]];
 		[self setReaderViewHidden:YES];
 		return;
 	}
