@@ -356,7 +356,7 @@
 			name = DMAKioskTests;
 			productName = DMAKioskTests;
 			productReference = 305FF5F81694D591003F14BC /* DMAKioskTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -367,6 +367,11 @@
 				CLASSPREFIX = DMA;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = LearningTimes;
+				TargetAttributes = {
+					305FF5D61694D591003F14BC = {
+						DevelopmentTeam = HBMWUU7Y6K;
+					};
+				};
 			};
 			buildConfigurationList = 305FF5D11694D591003F14BC /* Build configuration list for PBXProject "DMAKiosk" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -490,6 +495,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -519,6 +525,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -537,7 +544,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = armv7;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dallas Museum of Art";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMAKiosk/DMAKiosk-Prefix.pch";
 				INFOPLIST_FILE = "DMAKiosk/DMAKiosk-Info.plist";
@@ -546,7 +554,8 @@
 					"\"$(SRCROOT)/Libraries/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "596F9F9C-5DBA-4693-B7BB-15FC621B6FC5";
+				PROVISIONING_PROFILE = "4dd181d0-f424-4540-b39a-c15f03dc3ea9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4dd181d0-f424-4540-b39a-c15f03dc3ea9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -555,6 +564,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMAKiosk/DMAKiosk-Prefix.pch";
 				INFOPLIST_FILE = "DMAKiosk/DMAKiosk-Info.plist";
@@ -563,6 +574,7 @@
 					"\"$(SRCROOT)/Libraries/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
