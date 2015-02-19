@@ -10,18 +10,20 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-#if 0
-#warning Staging server
-static NSString *const DMAMainViewControlleriPadBaseURL = @"http://dma:devsonly@dma.wdslab.com/";
-#else
-static NSString *const DMAMainViewControlleriPadBaseURL = @"http://octoberfriends.dma.org/";
-#endif
+static NSString *const DMAMainViewControlleriPadBaseURL = @"http://friends.dma.org/";
+
 
 @implementation DMAMainViewController_iPad
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 - (void)viewDidLoad
 {
-	[super viewDidLoad];
+
+    
+    [super viewDidLoad];
 
 	_webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
 	[_webView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
