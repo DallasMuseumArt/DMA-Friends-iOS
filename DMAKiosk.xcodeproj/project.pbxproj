@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		305FF5D71694D591003F14BC /* DMAKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMAKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305FF5DB1694D591003F14BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		305FF5DD1694D591003F14BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		305FF5DF1694D591003F14BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +61,6 @@
 		305FF5ED1694D591003F14BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		305FF5EF1694D591003F14BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		305FF5F11694D591003F14BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		305FF5F81694D591003F14BC /* DMAKioskTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMAKioskTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		305FF5F91694D591003F14BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		305FF6011694D591003F14BC /* DMAKioskTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMAKioskTests-Info.plist"; sourceTree = "<group>"; };
 		305FF6031694D591003F14BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -105,6 +103,9 @@
 		30C6F93D1694F03B004CEFC6 /* icon-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ipad@2x.png"; sourceTree = "<group>"; };
 		30F3BB4A1695D45500DAEAAD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		30F3BB4C1695D46200DAEAAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FE93A8D41A96436E00CC117D /* Products */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Products; sourceTree = "<group>"; };
+		FE93A8D51A96442A00CC117D /* DMAKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMAKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE93A8D61A96442A00CC117D /* DMAKioskTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMAKioskTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,17 +144,10 @@
 				305FF5E11694D591003F14BC /* DMAKiosk */,
 				305FF5FF1694D591003F14BC /* DMAKioskTests */,
 				305FF5DA1694D591003F14BC /* Frameworks */,
-				305FF5D81694D591003F14BC /* Products */,
+				FE93A8D41A96436E00CC117D /* Products */,
+				FE93A8D51A96442A00CC117D /* DMAKiosk.app */,
+				FE93A8D61A96442A00CC117D /* DMAKioskTests.octest */,
 			);
-			sourceTree = "<group>";
-		};
-		305FF5D81694D591003F14BC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				305FF5D71694D591003F14BC /* DMAKiosk.app */,
-				305FF5F81694D591003F14BC /* DMAKioskTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		305FF5DA1694D591003F14BC /* Frameworks */ = {
@@ -336,7 +330,7 @@
 			);
 			name = DMAKiosk;
 			productName = DMAKiosk;
-			productReference = 305FF5D71694D591003F14BC /* DMAKiosk.app */;
+			productReference = FE93A8D51A96442A00CC117D /* DMAKiosk.app */;
 			productType = "com.apple.product-type.application";
 		};
 		305FF5F71694D591003F14BC /* DMAKioskTests */ = {
@@ -355,7 +349,7 @@
 			);
 			name = DMAKioskTests;
 			productName = DMAKioskTests;
-			productReference = 305FF5F81694D591003F14BC /* DMAKioskTests.octest */;
+			productReference = FE93A8D61A96442A00CC117D /* DMAKioskTests.octest */;
 			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
@@ -382,7 +376,7 @@
 				en,
 			);
 			mainGroup = 305FF5CC1694D591003F14BC;
-			productRefGroup = 305FF5D81694D591003F14BC /* Products */;
+			productRefGroup = 305FF5CC1694D591003F14BC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -553,6 +547,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/ZBarSDK\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -570,6 +565,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/ZBarSDK\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
